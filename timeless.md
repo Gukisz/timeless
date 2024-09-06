@@ -87,3 +87,27 @@ No fluxo de uso do programa o usuário faria um cadastro e logo após poderia es
 
 | desenho       | BLOB        | Desenho enviado (opcional)         |
 | enviado_em    | DATETIME    | Data de envio                      |
+
+---
+
+## 7. Protótipos Visuais
+
+- **Figma**: Link para os protótipos do frontend.
+
+---
+
+## 9. Equipe
+Liste as pessoas responsáveis por cada área do projeto.
+
+- **Gestor de Projeto**: Gustavo Ribeiro
+- **Gestor de Técnico**: Adrian Fagundes
+- **Desenvolvedor Backend**: Guilherme Keller, Adrian Fagundes
+- **Desenvolvedor Frontend**: Gustavo Ribeiro, Emanuel Chaves
+- **Designer UX/UI**: Maria Eduarda.
+
+---
+
+## 11. Considerações Finais
+Para a integração da IA pensar na possibilidade de usar o TensorFlow.js para modelos de IA que podem ser executados no próprio dispositivo do usuário ou no servidor além disso pensar em uma análise preditiva um sistema de IA que analisa o histórico de uso do aplicativo para sugerir melhorias específicas com base nos hábitos e preferências de cada usuário.
+
+---
