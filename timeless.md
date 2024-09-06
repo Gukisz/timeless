@@ -85,9 +85,6 @@ No fluxo de uso do programa o usuário faria um cadastro e logo após poderia es
 | horarioInicio | DATETIME    | Inicio da atividade         |
 | horarioFim    | DATETIME    | Fim da atividade                 |
 
-| desenho       | BLOB        | Desenho enviado (opcional)         |
-| enviado_em    | DATETIME    | Data de envio                      |
-
 ---
 
 ## 7. Protótipos Visuais
