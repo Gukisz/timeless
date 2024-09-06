@@ -108,6 +108,6 @@ Liste as pessoas responsáveis por cada área do projeto.
 ---
 
 ## 11. Considerações Finais
-Para a integração da IA pensar na possibilidade de usar o TensorFlow.js para modelos de IA que podem ser executados no próprio dispositivo do usuário ou no servidor além disso pensar em uma análise preditiva um sistema de IA que analisa o histórico de uso do aplicativo para sugerir melhorias específicas com base nos hábitos e preferências de cada usuário.
+Para a integração da IA pensar na possibilidade de usar o **TensorFlow.js** para modelos de IA que podem ser executados no próprio dispositivo do usuário ou no servidor além disso pensar em uma **análise preditiva** um sistema de IA que analisa o histórico de uso do aplicativo para sugerir melhorias específicas com base nos hábitos e preferências de cada usuário.
 
 ---
