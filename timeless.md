@@ -122,15 +122,15 @@ Este tema de cores consiste em Liquorice Green, Jungle Noises, Envisage, Farmers
 
 - **Referencia para interface**:
 ![Referencia1](src/referencia1.png)
-![Referencia2](src/refencia2.png)
 Uma interface mais clean e de facil entendimento onde o usuario não fique confuso ou perdido em meio as funcionalidades.
 
 - **Referencia para funcionalidades**:
-![Sugestoes](src/sugestoes.png)
-O usuario teria sugestões para aceitar ou recusar 
 
-![Calendario](src/calendario.png)
-O usuario teria acesso a um calendario para colocar seus horarios disponiveis e seus horarios onde estão em atividade.
+- ![Sugestoes](src/sugestoes.png)
+    O usuario teria sugestões para aceitar ou recusar 
+
+- ![Calendario](src/calendario.png)
+    O usuario teria acesso a um calendario para colocar seus horarios disponiveis e seus horarios onde estão em atividade.
 
 - **Funcionalidades para Usuarios**:
     - Notificações push 
