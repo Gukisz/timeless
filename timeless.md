@@ -126,11 +126,13 @@ Uma interface mais clean e de facil entendimento onde o usuario não fique confu
 
 - **Referencia para funcionalidades**:
 
-- ![Sugestoes](src/sugestoes.png)
-    O usuario teria sugestões para aceitar ou recusar 
+  ![Sugestoes](src/sugestoes.png)
 
-- ![Calendario](src/calendario.png)
-    O usuario teria acesso a um calendario para colocar seus horarios disponiveis e seus horarios onde estão em atividade.
+  O usuario teria sugestões para aceitar ou recusar
+
+  ![Calendario](src/calendario.png)
+
+  O usuario teria acesso a um calendario para colocar seus horarios disponiveis e seus horarios onde estão em atividade.
 
 - **Funcionalidades para Usuarios**:
     - Notificações push 
