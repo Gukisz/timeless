@@ -80,13 +80,47 @@ No fluxo de uso do programa o usuário faria um cadastro e logo após poderia es
 
 | Campo         | Tipo        | Descrição                          |
 |---------------|-------------|------------------------------------|
-| id            | INT         | Identificador unico da preferencia  |
-| pref          | VARCHAR(255)| Nome da preferencia           |
-| horarioInicio | DATETIME    | Inicio da atividade         |
-| horarioFim    | DATETIME    | Fim da atividade                 |
+| id            | INT         | Identificador unico da preferencia |
+| pref          | VARCHAR(255)| Nome da preferencia                |
+| horarioInicio | TIME        | Inicio da atividade                |
+| horarioFim    | TIME        | Fim da atividade                   |
+| intervalo     | TIME        | duraçao do intervalo               |
+| metodo_prod   | VARCHAR(255)| Metodo que vai ser utilizado       |
 
-| desenho       | BLOB        | Desenho enviado (opcional)         |
-| enviado_em    | DATETIME    | Data de envio                      |
+### Exemplo: Tabela Preferências de usuário
+
+| Campo         | Tipo        | Descrição                          |
+|---------------|-------------|------------------------------------|
+| id            | INT         | Identificador único                |
+| id_pref       | INT         | Chave Estrangeira preferências     |
+| id_user       | INT         | Chave Estrangeira usuários         |
+
+### Exemplo: Agenda
+
+| Campo         | Tipo        | Descrição                          |
+|---------------|-------------|------------------------------------|
+| id            | INT         | Identificador único                |
+| data          | DATE        | Define uma data para tarefa        |
+| horarios      | TIME        | Define um horário para tarefa      |
+| titulo_tarefa | VARCHAR(100)| Titulo da tarefa                   |
+| tarefas       | TEXT        | A tarefa em propriamente dita      |
+
+### Exemplo: Segestões de Produtividade
+
+| Campo         | Tipo        | Descrição                          |
+|---------------|-------------|------------------------------------|
+| id            | INT         | Identificador único                |
+| id_user       | INT         | Chave estrangeira usuário          |
+| sugestao      | TEXT        | Texto da sugestão de hábito/tarefa |
+| sugestao_at   | TIMESTAMP   | Data de criação da sugestão        |
+| implementacao_at| TIMESTAMP | Data de implementaçao da sugestão  |
+
+### Exemplo: Prompt IA
+
+| Campo         | Tipo        | Descrição                          |
+|---------------|-------------|------------------------------------|
+| id            | INT         | Identificador único                |
+| prompt        | TEXT        | Prompt para utilizar na IA         |
 
 ---
 
