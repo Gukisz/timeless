@@ -68,6 +68,17 @@ No fluxo de uso do programa o usuário faria um cadastro e logo após poderia es
 ## 6. Modelo de Dados
 
 ### Exemplo: Tabela de Usuários
+
+| Campo      | Tipo       | Descrição                            |
+|------------|------------|--------------------------------------|
+| id         | INT        | Identificador único do usuário       |
+| nome       | VARCHAR(50)| Nome do usuário                      |
+| email      | VARCHAR(100)| Email do usuário                    |
+| senha      | VARCHAR(255)| Senha criptografada                 |
+| criado_em  | DATETIME   | Data de criação do usuário           |
+
+### Exemplo: Tabela de Preferências
+
 | Campo      | Tipo       | Descrição                            |
 |------------|------------|--------------------------------------|
 | id         | INT        | Identificador único do usuário       |
