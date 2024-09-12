@@ -128,20 +128,20 @@ No fluxo de uso do programa o usuário faria um cadastro e logo após poderia es
 ## 7. Protótipos Visuais
 
 - **Cores**: 
-![Paleta de Cores](src/paleta.png)
+![Paleta de Cores](assets/paleta.png)
 Este tema de cores consiste em Liquorice Green, Jungle Noises, Envisage, Farmers Green e Polar. 
 
 - **Referencia para interface**:
-![Referencia1](src/referencia1.png)
+![Referencia1](assets/referencia1.png)
 Uma interface mais clean e de facil entendimento onde o usuario não fique confuso ou perdido em meio as funcionalidades.
 
 - **Referencia para funcionalidades**:
 
-  ![Sugestoes](src/sugestoes.png)
+  ![Sugestoes](assets/sugestoes.png)
 
   O usuario teria sugestões para aceitar ou recusar
 
-  ![Calendario](src/calendario.png)
+  ![Calendario](assets/calendario.png)
 
   O usuario teria acesso a um calendario para colocar seus horarios disponiveis e seus horarios onde estão em atividade.
 
