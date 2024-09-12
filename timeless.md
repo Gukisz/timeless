@@ -68,6 +68,17 @@ No fluxo de uso do programa o usuário faria um cadastro e logo após poderia es
 ## 6. Modelo de Dados
 
 ### Exemplo: Tabela de Usuários
+
+| Campo      | Tipo       | Descrição                            |
+|------------|------------|--------------------------------------|
+| id         | INT        | Identificador único do usuário       |
+| nome       | VARCHAR(50)| Nome do usuário                      |
+| email      | VARCHAR(100)| Email do usuário                    |
+| senha      | VARCHAR(255)| Senha criptografada                 |
+| criado_em  | DATETIME   | Data de criação do usuário           |
+
+### Exemplo: Tabela de Preferências
+
 | Campo      | Tipo       | Descrição                            |
 |------------|------------|--------------------------------------|
 | id         | INT        | Identificador único do usuário       |
@@ -125,11 +136,14 @@ Este tema de cores consiste em Liquorice Green, Jungle Noises, Envisage, Farmers
 Uma interface mais clean e de facil entendimento onde o usuario não fique confuso ou perdido em meio as funcionalidades.
 
 - **Referencia para funcionalidades**:
-![Sugestoes](src/sugestoes.png)
-O usuario teria sugestões para aceitar ou recusar 
 
-![Calendario](src/calendario.png)
-O usuario teria acesso a um calendario para colocar seus horarios disponiveis e seus horarios onde estão em atividade.
+  ![Sugestoes](src/sugestoes.png)
+
+  O usuario teria sugestões para aceitar ou recusar
+
+  ![Calendario](src/calendario.png)
+
+  O usuario teria acesso a um calendario para colocar seus horarios disponiveis e seus horarios onde estão em atividade.
 
 - **Funcionalidades para Usuarios**:
     - Notificações push 
