@@ -122,7 +122,6 @@ Este tema de cores consiste em Liquorice Green, Jungle Noises, Envisage, Farmers
 
 - **Referencia para interface**:
 ![Referencia1](src/referencia1.png)
-![Referencia2](src/refencia2.png)
 Uma interface mais clean e de facil entendimento onde o usuario não fique confuso ou perdido em meio as funcionalidades.
 
 - **Referencia para funcionalidades**:
