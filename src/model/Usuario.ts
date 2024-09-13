@@ -1,5 +1,3 @@
-import { Preferencia } from "./Preferencia";
-
 export class Usuario {
     constructor(
         private     id: number,
@@ -7,22 +5,21 @@ export class Usuario {
         private     email: string,
         private     senha: number,
         private     criado_em: Date,
-        private     preferencias: Preferencia[]
     ) {}
 
     public validarEmail(): boolean {
         return true
         //O sistema verifica se o email esta certo 
-    }
+      }
 
     public validarSenha(): boolean {
         return true
         //O sistema verifica se a senha esta certa
-    } 
+      } 
 
     public RecuperarSenha(): string {
-        //Usuario criará nova senha
-    }
+        return ''
+      }
 
     public validarNome(): boolean {
         return this.nome.length >= 3;

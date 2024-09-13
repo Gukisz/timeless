@@ -8,4 +8,11 @@ export class sugestoes {
         private     sugestao_at: string,
         private     implementacao_at: Date
     ) {}
-  }
+    
+    public dataSugestao(): void {  
+}
+
+    public dataAtividade(): void {  
+}
+
+}
