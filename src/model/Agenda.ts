@@ -12,7 +12,7 @@ public getId(): number {
     return this.id;
 }
 
-public getEvento(): { data: Date; horarios: Date; titulo_tarefa: string; tarefas: string } {
+public getAtividade(): { data: Date; horarios: Date; titulo_tarefa: string; tarefas: string } {
     return {
         data: this.data,
         horarios: this.horarios,
@@ -34,7 +34,7 @@ public getTituloTarefa(): string {
 }
 
 // Setters
-public setEvento(data: Date, horarios: Date, titulo_tarefa: string, tarefas: string): void {
+public setAtividade(data: Date, horarios: Date, titulo_tarefa: string, tarefas: string): void {
     this.data = data;
     this.horarios = horarios;
     this.titulo_tarefa = titulo_tarefa;
@@ -54,6 +54,7 @@ public setTituloTarefa(novoTitulo: string): void {
 }
 
 // Métodos adicionais
+
 // Filtrar eventos por data
 public filtrarData(date: Date): void {
     if (this.data.toDateString() === date.toDateString()) {
