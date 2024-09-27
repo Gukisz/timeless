@@ -169,8 +169,8 @@ Uma interface mais clean e de facil entendimento onde o usuario não fique confu
 Liste as pessoas responsáveis por cada área do projeto.
 
 - **Gestor de Projeto**: Gustavo Ribeiro
-- **Gestor de Técnico**: Adrian Fagundes
-- **Desenvolvedor Backend**: Guilherme Keller, Adrian Fagundes
+- **Gestor de Técnico**: 
+- **Desenvolvedor Backend**:
 - **Desenvolvedor Frontend**: Gustavo Ribeiro, Emanuel Chaves
 - **Designer UX/UI**: Maria Eduarda.
 
