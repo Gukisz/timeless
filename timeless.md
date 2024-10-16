@@ -96,7 +96,7 @@ No fluxo de uso do programa o usuário faria um cadastro e logo após poderia es
 | id_pref       | INT         | Chave Estrangeira preferências     |
 | id_user       | INT         | Chave Estrangeira usuários         |
 
-### Exemplo: Agenda
+### Exemplo: Eventos
 
 | Campo         | Tipo        | Descrição                          |
 |---------------|-------------|------------------------------------|
@@ -106,7 +106,7 @@ No fluxo de uso do programa o usuário faria um cadastro e logo após poderia es
 | titulo_tarefa | VARCHAR(100)| Titulo da tarefa                   |
 | tarefas       | TEXT        | A tarefa em propriamente dita      |
 
-### Exemplo: Segestões de Produtividade
+### Exemplo: Sugestões de Produtividade
 
 | Campo         | Tipo        | Descrição                          |
 |---------------|-------------|------------------------------------|
