@@ -114,12 +114,12 @@ Tabela para armazenar informações básicas sobre os usuários, suas credenciai
 | `created_at`        | TIMESTAMP      | Data de criação da conta                        |
 | `saltt`             | CHAR(64) NOT NULL | Valor de salt para senha criptografada       |
 
-#### 2. **Preferências de Usuário**
+#### 2. **Disponibilidade do Usuário**
 Tabela para armazenar as preferências de cada usuário, incluindo seus horários preferidos de trabalho, intervalos de descanso e técnicas de produtividade.
 
 | Campo               | Tipo           | Descrição                                       |
 |---------------------|----------------|-------------------------------------------------|
-| `preference_id`     | INT (PK)       | Identificador único da preferência              |
+| `available_id`     | INT (PK)       | Identificador único da disponibilidade           |
 | `user_id`           | INT (FK)       | Referência ao usuário                           |
 | `work_hours_start`  | TIME           | Horário preferido de início de trabalho         |
 | `work_hours_end`    | TIME           | Horário preferido de término de trabalho        |
