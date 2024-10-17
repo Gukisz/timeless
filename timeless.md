@@ -124,7 +124,6 @@ Tabela para armazenar as preferências de cada usuário, incluindo seus horário
 | `work_hours_start`  | TIME           | Horário preferido de início de trabalho         |
 | `work_hours_end`    | TIME           | Horário preferido de término de trabalho        |
 | `break_interval`    | INT            | Intervalo de descanso (em minutos)              |
-| `technique`         | VARCHAR(50)    | Técnica de produtividade preferida (ex: Pomodoro) |
 | `rest_days`         | VARCHAR(50)    | Dias de descanso preferidos (ex: "Sábado, Domingo") |
 | `created_at`        | TIMESTAMP      | Data de criação da preferência                  |
 
