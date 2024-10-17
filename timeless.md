@@ -67,61 +67,115 @@ No fluxo de uso do programa o usuário faria um cadastro e logo após poderia es
 
 ## 6. Modelo de Dados
 
-### Exemplo: Tabela de Usuários
+Para o desenvolvimento de um aplicativo que auxilia na gestão do tempo, produtividade e saúde mental, integrando inteligência artificial (IA) e um ChatBOT para suporte emocional e financeiro, o modelo de dados precisa refletir a complexidade das interações com o usuário, preferências pessoais, sugestões da IA e interações com o ChatBOT. Abaixo está uma proposta de estrutura do banco de dados para este projeto.
 
-| Campo      | Tipo       | Descrição                            |
-|------------|------------|--------------------------------------|
-| id         | INT        | Identificador único do usuário       |
-| nome       | VARCHAR(50)| Nome do usuário                      |
-| email      | VARCHAR(100)| Email do usuário                    |
-| senha      | VARCHAR(255)| Senha criptografada                 |
-| criado_em  | DATETIME   | Data de criação do usuário           |
+### Modelo de Dados
 
-### Exemplo: Tabela de Preferências
+#### 1. **Usuários**
+Tabela para armazenar informações básicas sobre os usuários, suas credenciais de login e dados pessoais relevantes para o funcionamento do sistema.
 
-| Campo      | Tipo       | Descrição                            |
-|------------|------------|--------------------------------------|
-| id         | INT        | Identificador único do usuário       |
-| pref          | VARCHAR(255)| Nome da preferencia                |
-| horarioInicio | TIME        | Inicio da atividade                |
-| horarioFim    | TIME        | Fim da atividade                   |
-| intervalo     | TIME        | duraçao do intervalo               |
-| metodo_prod   | VARCHAR(255)| Metodo que vai ser utilizado       |
+| Campo               | Tipo           | Descrição                                       |
+|---------------------|----------------|-------------------------------------------------|
+| `user_id`           | INT (PK)       | Identificador único do usuário                  |
+| `name`              | VARCHAR(100)   | Nome do usuário                                 |
+| `email`             | VARCHAR(100)   | E-mail do usuário                               |
+| `password`          | VARCHAR(255)   | Senha hashada                                   |
+| `date_of_birth`     | DATE           | Data de nascimento do usuário                   |
+| `created_at`        | TIMESTAMP      | Data de criação da conta                        |
 
-### Exemplo: Tabela Preferências de usuário
+#### 2. **Preferências de Usuário**
+Tabela para armazenar as preferências de cada usuário, incluindo seus horários preferidos de trabalho, intervalos de descanso e técnicas de produtividade.
 
-| Campo         | Tipo        | Descrição                          |
-|---------------|-------------|------------------------------------|
-| id            | INT         | Identificador único                |
-| id_pref       | INT         | Chave Estrangeira preferências     |
-| id_user       | INT         | Chave Estrangeira usuários         |
+| Campo               | Tipo           | Descrição                                       |
+|---------------------|----------------|-------------------------------------------------|
+| `preference_id`     | INT (PK)       | Identificador único da preferência              |
+| `user_id`           | INT (FK)       | Referência ao usuário                           |
+| `work_hours_start`  | TIME           | Horário preferido de início de trabalho         |
+| `work_hours_end`    | TIME           | Horário preferido de término de trabalho        |
+| `break_interval`    | INT            | Intervalo de descanso (em minutos)              |
+| `technique`         | VARCHAR(50)    | Técnica de produtividade preferida (ex: Pomodoro) |
+| `rest_days`         | VARCHAR(50)    | Dias de descanso preferidos (ex: "Sábado, Domingo") |
+| `created_at`        | TIMESTAMP      | Data de criação da preferência                  |
 
-### Exemplo: Eventos
+#### 3. **Sugestões de Produtividade**
+Tabela que armazena sugestões geradas pela IA com base nas preferências do usuário. As sugestões podem incluir mudanças no horário de trabalho, pausas e técnicas de produtividade.
 
-| Campo         | Tipo        | Descrição                          |
-|---------------|-------------|------------------------------------|
-| id            | INT         | Identificador único                |
-| data          | DATE        | Define uma data para tarefa        |
-| horarios      | TIME        | Define um horário para tarefa      |
-| titulo_tarefa | VARCHAR(100)| Titulo da tarefa                   |
-| tarefas       | TEXT        | A tarefa em propriamente dita      |
+| Campo               | Tipo           | Descrição                                       |
+|---------------------|----------------|-------------------------------------------------|
+| `suggestion_id`     | INT (PK)       | Identificador único da sugestão                 |
+| `user_id`           | INT (FK)       | Referência ao usuário                           |
+| `suggestion_text`   | TEXT           | Descrição da sugestão                           |
+| `status`            | ENUM ('Aprovado', 'Reprovado', 'Pendente') | Status da sugestão pelo usuário                 |
+| `created_at`        | TIMESTAMP      | Data de criação da sugestão                     |
 
-### Exemplo: Sugestões de Produtividade
+#### 4. **Tarefas**
+Tabela para gerenciar as tarefas dos usuários, permitindo a organização e priorização das atividades.
 
-| Campo         | Tipo        | Descrição                          |
-|---------------|-------------|------------------------------------|
-| id            | INT         | Identificador único                |
-| id_user       | INT         | Chave estrangeira usuário          |
-| sugestao      | TEXT        | Texto da sugestão de hábito/tarefa |
-| sugestao_at   | TIMESTAMP   | Data de criação da sugestão        |
-| implementacao_at| TIMESTAMP | Data de implementaçao da sugestão  |
+| Campo               | Tipo           | Descrição                                       |
+|---------------------|----------------|-------------------------------------------------|
+| `task_id`           | INT (PK)       | Identificador único da tarefa                   |
+| `user_id`           | INT (FK)       | Referência ao usuário                           |
+| `task_title`        | VARCHAR(255)   | Título da tarefa                                |
+| `task_description`  | TEXT           | Descrição da tarefa                             |
+| `due_date`          | DATE           | Data de conclusão esperada                      |
+| `priority`          | ENUM ('Alta', 'Média', 'Baixa') | Prioridade da tarefa                           |
+| `status`            | ENUM ('Pendente', 'Concluída', 'Cancelada') | Status da tarefa                               |
+| `created_at`        | TIMESTAMP      | Data de criação da tarefa                       |
 
-### Exemplo: Prompt IA
+#### 5. **Histórico de Tarefas**
+Tabela que registra o histórico de alterações nas tarefas, útil para auditoria e acompanhamento de produtividade.
 
-| Campo         | Tipo        | Descrição                          |
-|---------------|-------------|------------------------------------|
-| id            | INT         | Identificador único                |
-| prompt        | TEXT        | Prompt para utilizar na IA         |
+| Campo               | Tipo           | Descrição                                       |
+|---------------------|----------------|-------------------------------------------------|
+| `history_id`        | INT (PK)       | Identificador único do histórico                |
+| `task_id`           | INT (FK)       | Referência à tarefa                             |
+| `user_id`           | INT (FK)       | Referência ao usuário                           |
+| `change`            | TEXT           | Descrição da alteração                          |
+| `changed_at`        | TIMESTAMP      | Data da alteração                               |
+
+#### 6. **Interações com o ChatBOT**
+Tabela que registra as interações entre o usuário e o ChatBOT, incluindo consultas emocionais ou financeiras e as respostas geradas.
+
+| Campo               | Tipo           | Descrição                                       |
+|---------------------|----------------|-------------------------------------------------|
+| `interaction_id`    | INT (PK)       | Identificador único da interação                |
+| `user_id`           | INT (FK)       | Referência ao usuário                           |
+| `message_text`      | TEXT           | Mensagem enviada pelo usuário                   |
+| `bot_response`      | TEXT           | Resposta gerada pelo ChatBOT                    |
+| `interaction_type`  | ENUM ('Financeiro', 'Emocional') | Tipo de interação (financeira ou emocional)    |
+| `created_at`        | TIMESTAMP      | Data da interação                               |
+
+#### 7. **Agenda de Atividades**
+Tabela para organizar a agenda pessoal do usuário, registrando eventos e compromissos importantes.
+
+| Campo               | Tipo           | Descrição                                       |
+|---------------------|----------------|-------------------------------------------------|
+| `event_id`          | INT (PK)       | Identificador único do evento                   |
+| `user_id`           | INT (FK)       | Referência ao usuário                           |
+| `event_title`       | VARCHAR(255)   | Título do evento                                |
+| `event_date`        | DATE           | Data do evento                                  |
+| `event_time`        | TIME           | Horário do evento                               |
+| `location`          | VARCHAR(255)   | Localização do evento                           |
+| `created_at`        | TIMESTAMP      | Data de criação do evento                       |
+
+#### 8. **Relatórios de Produtividade**
+Tabela que registra relatórios periódicos sobre o desempenho do usuário, com base nas suas tarefas e interações no sistema.
+
+| Campo               | Tipo           | Descrição                                       |
+|---------------------|----------------|-------------------------------------------------|
+| `report_id`         | INT (PK)       | Identificador único do relatório                |
+| `user_id`           | INT (FK)       | Referência ao usuário                           |
+| `productivity_score`| DECIMAL(5,2)   | Pontuação de produtividade calculada pela IA    |
+| `suggestions_given` | TEXT           | Sugestões fornecidas ao usuário no relatório    |
+| `created_at`        | TIMESTAMP      | Data de geração do relatório                    |
+
+### Relacionamentos
+- **Usuário-Preferências**: Um usuário pode ter várias preferências personalizadas ao longo do tempo.
+- **Usuário-Sugestões de Produtividade**: A IA fornece várias sugestões para cada usuário, que são avaliadas.
+- **Usuário-Tarefas**: Cada usuário pode criar várias tarefas, organizadas com base em sua prioridade e status.
+- **Usuário-ChatBOT**: As interações entre o usuário e o ChatBOT são registradas, diferenciadas por tipo (emocional ou financeiro).
+- **Usuário-Agenda**: Cada usuário pode ter vários eventos e compromissos agendados.
+- **Usuário-Relatórios**: Relatórios de produtividade são gerados com base nas atividades e interações do usuário.
 
 ---
 
