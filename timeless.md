@@ -112,6 +112,7 @@ Tabela para armazenar informações básicas sobre os usuários, suas credenciai
 | `password`          | VARCHAR(255)   | Senha hashada                                   |
 | `date_of_birth`     | DATE           | Data de nascimento do usuário                   |
 | `created_at`        | TIMESTAMP      | Data de criação da conta                        |
+| `saltt`             | CHAR(64) NOT NULL | Valor de salt para senha criptografada       |
 
 #### 2. **Preferências de Usuário**
 Tabela para armazenar as preferências de cada usuário, incluindo seus horários preferidos de trabalho, intervalos de descanso e técnicas de produtividade.
