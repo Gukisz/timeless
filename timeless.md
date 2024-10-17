@@ -10,50 +10,55 @@ No fluxo de uso do programa o usuário faria um cadastro e logo após poderia es
 
 ## 2. Funcionalidades Principais
 
-- 1. **Cadastro e Autenticação de Usuário**
+#### 1. **Cadastro e Autenticação de Usuário**
    - **Cadastro de Usuário**: Permitir que novos usuários criem uma conta fornecendo nome, e-mail, senha e outras informações relevantes, como data de nascimento.
    - **Login/Logout**: Sistema de autenticação seguro para acessar o aplicativo, utilizando e-mail e senha.
    - **Recuperação de Senha**: Permitir que o usuário redefina sua senha caso a esqueça, via e-mail.
 
-- 2. **Gestão de Preferências de Usuário**
+#### 2. **Gestão de Preferências de Usuário**
    - **Definir Preferências de Trabalho**: O usuário pode definir seus horários preferidos de trabalho, dias de descanso, intervalo entre tarefas, e técnicas de produtividade que deseja usar (ex.: Pomodoro).
    - **Personalização de Sugestões**: Baseado nas preferências definidas, o sistema sugere métodos e ajustes de tempo que se adequem ao perfil do usuário.
 
-- 3. **Gerenciamento de Tarefas**
+#### 3. **Gerenciamento de Tarefas**
    - **Adicionar Tarefas**: O usuário pode adicionar tarefas, definindo título, descrição, data de conclusão, prioridade e categoria (pessoal, profissional, etc.).
    - **Atualizar Tarefas**: O usuário pode editar informações de uma tarefa existente, como prazos ou prioridades.
    - **Listar Tarefas**: Permitir a visualização de todas as tarefas em andamento, filtrando por data, prioridade, ou status.
    - **Marcar como Concluída**: O usuário pode marcar uma tarefa como concluída.
    - **Histórico de Tarefas**: Visualizar o histórico de mudanças em uma tarefa ou lista de tarefas já concluídas.
 
-- 4. **Sugestões de Produtividade com IA**
+#### 4. **Sugestões de Produtividade com IA**
    - **Sugestões Personalizadas**: A IA analisa o comportamento do usuário, suas preferências e padrões de uso para sugerir técnicas e métodos de produtividade, como ajustes no horário de trabalho ou uso de intervalos.
    - **Aprovar ou Rejeitar Sugestões**: O usuário pode aprovar ou rejeitar sugestões fornecidas pela IA. As sugestões aprovadas podem ser aplicadas automaticamente na agenda do usuário.
    - **Relatórios Periódicos de Produtividade**: O sistema gera relatórios com análises de produtividade com base nas tarefas concluídas, horários de trabalho e interação com as sugestões da IA.
 
-- 5. **ChatBOT para Suporte Emocional e Financeiro**
+#### 5. **ChatBOT para Suporte Emocional e Financeiro**
    - **Suporte Financeiro**: O ChatBOT oferece conselhos básicos sobre finanças pessoais, como dicas de economia, controle de despesas, planejamento de orçamento e investimento.
    - **Suporte Emocional**: O ChatBOT auxilia o usuário a lidar com questões de saúde mental, oferecendo dicas de relaxamento, sugestões para lidar com estresse, burnout e equilíbrio entre vida pessoal e profissional.
    - **Conversas Personalizadas**: O ChatBOT personaliza suas respostas com base nas interações anteriores e nas preferências definidas pelo usuário, mantendo um histórico para fornecer suporte mais eficaz.
    - **Análise de Sentimento**: O ChatBOT utiliza análise de sentimento para detectar emoções nas mensagens do usuário e adaptar suas respostas de acordo com o estado emocional da pessoa.
 
-- 6. **Gerenciamento de Agenda**
+#### 6. **Gerenciamento de Agenda**
    - **Criar e Gerenciar Eventos**: O usuário pode criar eventos em sua agenda, como reuniões, compromissos pessoais ou prazos de entrega, definindo horários, datas e locais.
    - **Visualizar Agenda**: O sistema oferece uma visão semanal ou mensal dos compromissos e tarefas agendadas.
    - **Integração com Tarefas**: O sistema permite associar tarefas a eventos na agenda, para garantir que o usuário consiga visualizar seus compromissos e suas tarefas em uma única interface.
 
-- 7. **Lembretes e Notificações**
+#### 7. **Lembretes e Notificações**
    - **Lembretes de Tarefas**: O sistema notifica o usuário sobre o vencimento de tarefas, lembretes de intervalos para descanso e início de novas tarefas.
    - **Notificações de Sugestões**: Sempre que a IA gerar uma nova sugestão de produtividade, o usuário recebe uma notificação para avaliá-la.
    - **Notificações do ChatBOT**: O usuário recebe notificações de mensagens ou lembretes do ChatBOT, com dicas ou check-ins emocionais e financeiros.
 
-- 8. **Relatórios de Desempenho e Produtividade**
+#### 8. **Relatórios de Desempenho e Produtividade**
    - **Relatório Diário/Semanal/Mensal**: O sistema gera relatórios com análises detalhadas de como o tempo foi utilizado, quais tarefas foram concluídas, quantas pausas foram realizadas e como o usuário está progredindo em relação aos seus objetivos.
    - **Análise Comparativa**: Relatórios comparativos mostram como o desempenho do usuário evolui ao longo do tempo, fornecendo insights sobre melhorias e pontos a melhorar.
 
-- 10. **Configurações e Personalização**
+#### 9. **Gamificação (Opcional)**
+   - **Sistema de Recompensas**: O aplicativo pode implementar um sistema de recompensas para incentivar o usuário a concluir suas tarefas e seguir as sugestões da IA.
+   - **Níveis de Produtividade**: O usuário pode desbloquear novos níveis ou conquistas à medida que atinge metas de produtividade ou segue conselhos do ChatBOT e da IA.
+
+#### 10. **Configurações e Personalização**
    - **Customização de Interface**: O usuário pode personalizar o layout e temas da interface do aplicativo, de acordo com suas preferências visuais.
    - **Configurações de Notificações**: O usuário pode ajustar o tipo e a frequência de notificações, como lembretes de tarefas e sugestões da IA.
+
 
 ---
 
