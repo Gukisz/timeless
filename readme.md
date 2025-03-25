@@ -2,9 +2,9 @@
 
 ## 1. Objetivo da Aplicação
 
-Um aplicativo que ajuda as pessoas a gerenciar o tempo e priorizar tarefas entre outras atividades de forma eficaz usando a inteligência artificial como base. Além disso, existirá um ChatBOT para que ajude o usuário em sua mentalidade financeira e emocional. O usuário coloca seus dados e preferências no aplicativo e sugere melhorias para otimizar o uso do tempo, evitando procrastinação. Também sugere intervalos de descanso, técnicas de produtividade, como Pomodoro, e ajuda a criar um equilíbrio entre trabalho e lazer para ajudar em sua saúde mental.
+Um aplicativo que ajuda as pessoas a gerenciar o tempo e priorizar tarefas entre outras atividades de forma eficaz usando a inteligência artificial como base. Além disso, existirá uma IA para que ajude o usuário em sua mentalidade financeira e emocional. O usuário coloca seus dados e preferências no aplicativo e sugere melhorias para otimizar o uso do tempo, evitando procrastinação. Também sugere intervalos de descanso, técnicas de produtividade, como Pomodoro, e ajuda a criar um equilíbrio entre trabalho e lazer para ajudar em sua saúde mental.
 
-No fluxo de uso do programa o usuário faria um cadastro e logo após poderia escolher suas preferências e gostos pessoais, logo em seguida já seriam dadas sugestões “iniciais” para o usuario aprovar ou não reprovar. além disso existirá uma aba com que o usuário falará com o ChatBOT personalizado para ajuda-lo em suas questões pessoais.
+No fluxo de uso do programa o usuário faria um cadastro e logo após poderia escolher suas preferências e gostos pessoais, logo em seguida já seriam dadas sugestões “iniciais” para o usuario aprovar ou não reprovar.
 
 ---
 
@@ -30,12 +30,6 @@ No fluxo de uso do programa o usuário faria um cadastro e logo após poderia es
    - **Sugestões Personalizadas**: A IA analisa o comportamento do usuário, suas preferências e padrões de uso para sugerir técnicas e métodos de produtividade, como ajustes no horário de trabalho ou uso de intervalos.
    - **Aprovar ou Rejeitar Sugestões**: O usuário pode aprovar ou rejeitar sugestões fornecidas pela IA. As sugestões aprovadas podem ser aplicadas automaticamente na agenda do usuário.
    - **Relatórios Periódicos de Produtividade**: O sistema gera relatórios com análises de produtividade com base nas tarefas concluídas, horários de trabalho e interação com as sugestões da IA.
-
-- **ChatBOT para Suporte Emocional e Financeiro**:
-   - **Suporte Financeiro**: O ChatBOT oferece conselhos básicos sobre finanças pessoais, como dicas de economia, controle de despesas, planejamento de orçamento e investimento.
-   - **Suporte Emocional**: O ChatBOT auxilia o usuário a lidar com questões de saúde mental, oferecendo dicas de relaxamento, sugestões para lidar com estresse, burnout e equilíbrio entre vida pessoal e profissional.
-   - **Conversas Personalizadas**: O ChatBOT personaliza suas respostas com base nas interações anteriores e nas preferências definidas pelo usuário, mantendo um histórico para fornecer suporte mais eficaz.
-   - **Análise de Sentimento**: O ChatBOT utiliza análise de sentimento para detectar emoções nas mensagens do usuário e adaptar suas respostas de acordo com o estado emocional da pessoa.
 
 - **Gerenciamento de Agenda**:
    - **Criar e Gerenciar Eventos**: O usuário pode criar eventos em sua agenda, como reuniões, compromissos pessoais ou prazos de entrega, definindo horários, datas e locais.
