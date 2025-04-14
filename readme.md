@@ -108,17 +108,8 @@ Tabela para armazenar informações básicas sobre os usuários, suas credenciai
 | `created_at`        | TIMESTAMP      | Data de criação da conta                        |
 | `salt`             | CHAR(64) NOT NULL | Valor de salt para senha criptografada       |
 
-#### 2. **PromptIA**
 
-Tabela que registra templates de prompts a serem utilizados para gerar  respostas personalizadas do ChatBOT.
-
-
-| Campo               | Tipo           | Descrição                                       |
-|---------------------|----------------|-------------------------------------------------|
-| `prompt_id`         | INT (PK)       | Identificador único do promptIA                 |
-| `prompt`            | TEXT           | Template do prompt                              |
-
-#### 3. **Preferências**
+#### 2. **Preferências**
 
 Tabela que armazena as preferências por exemplo música, esporte, etc.
 
@@ -127,7 +118,7 @@ Tabela que armazena as preferências por exemplo música, esporte, etc.
 | `preference_id`     | INT (PK)       | Identificador das preferencias do usuário       |
 | `preference_name`   | VARCHAR(50)    | Nome da Preferencia                             |
 
-#### 4. **Preferências de Usuário**
+#### 3. **Preferências de Usuário**
 
 Tabela que armazena as preferências do usuário. Estabelecendo uma relação de muito para muitos entre os usuários e as preferências.
 
@@ -137,7 +128,7 @@ Tabela que armazena as preferências do usuário. Estabelecendo uma relação de
 | `preference_id`     | INT (FK)       | Referência a preferencia                        |
 | `user_id`           | INT (FK)       | Referência ao usuário                           |
 
-#### 5. **Disponibilidade do Usuário**
+#### 4. **Disponibilidade do Usuário**
 Tabela para armazenar a disponibilidade do usuário, incluindo seus horários preferidos de trabalho, intervalos de descanso e técnicas de produtividade.
 
 | Campo               | Tipo           | Descrição                                       |
@@ -150,7 +141,7 @@ Tabela para armazenar a disponibilidade do usuário, incluindo seus horários pr
 | `rest_days`         | VARCHAR(50)    | Dias de descanso preferidos (ex: "Sábado, Domingo") |
 | `created_at`        | TIMESTAMP      | Data de criação                                 |
 
-#### 6. **Sugestões de Produtividade**
+#### 5. **Sugestões de Produtividade**
 Tabela que armazena sugestões geradas pela IA com base nas preferências do usuário. As sugestões podem incluir mudanças no horário de trabalho, pausas e técnicas de produtividade.
 
 | Campo               | Tipo           | Descrição                                       |
@@ -162,7 +153,7 @@ Tabela que armazena sugestões geradas pela IA com base nas preferências do usu
 | `status`            | ENUM ('Aprovado', 'Reprovado', 'Pendente') | Status da sugestão pelo usuário                 |
 | `created_at`        | TIMESTAMP      | Data de criação da sugestão                     |
 
-#### 7. **Tarefas**
+#### 6. **Tarefas**
 Tabela para gerenciar as tarefas dos usuários, permitindo a organização e priorização das atividades.
 
 | Campo               | Tipo           | Descrição                                       |
@@ -176,7 +167,7 @@ Tabela para gerenciar as tarefas dos usuários, permitindo a organização e pri
 | `status`            | ENUM ('Pendente', 'Concluída', 'Cancelada') | Status da tarefa                               |
 | `created_at`        | TIMESTAMP      | Data de criação da tarefa                       |
 
-#### 8. **Histórico de Tarefas**
+#### 7. **Histórico de Tarefas**
 Tabela que registra o histórico de alterações nas tarefas, útil para auditoria e acompanhamento de produtividade.
 
 | Campo               | Tipo           | Descrição                                       |
@@ -187,7 +178,7 @@ Tabela que registra o histórico de alterações nas tarefas, útil para auditor
 | `change`            | TEXT           | Descrição da alteração                          |
 | `changed_at`        | TIMESTAMP      | Data da alteração                               |
 
-#### 9. **Interações com o ChatBOT**
+#### 8. **Interações com o ChatBOT**
 Tabela que registra as interações entre o usuário e o ChatBOT, incluindo consultas emocionais ou financeiras e as respostas geradas.
 
 | Campo               | Tipo           | Descrição                                       |
@@ -199,7 +190,7 @@ Tabela que registra as interações entre o usuário e o ChatBOT, incluindo cons
 | `interaction_type`  | ENUM ('Financeiro', 'Emocional') | Tipo de interação (financeira ou emocional)    |
 | `created_at`        | TIMESTAMP      | Data da interação                               |
 
-#### 10. **Agenda de Atividades**
+#### 9. **Agenda de Atividades**
 Tabela para organizar a agenda pessoal do usuário, registrando eventos e compromissos importantes.
 
 | Campo               | Tipo           | Descrição                                       |
@@ -211,7 +202,7 @@ Tabela para organizar a agenda pessoal do usuário, registrando eventos e compro
 | `event_time`        | TIME           | Horário do evento                               |
 | `created_at`        | TIMESTAMP      | Data de criação do evento                       |
 
-#### 11. **Relatórios de Produtividade**
+#### 10. **Relatórios de Produtividade**
 Tabela que registra relatórios periódicos sobre o desempenho do usuário, com base nas suas tarefas e interações no sistema.
 
 | Campo               | Tipo           | Descrição                                       |
