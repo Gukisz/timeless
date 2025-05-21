@@ -1,0 +1,48 @@
+username
+email
+password
+
+data de nascimento
+sexo
+orientação sexual
+
+telefone
+estado civil
+
+
+opcional
+foto do perfil
+cidade
+estado
+pais
+
+trabalho
+estudo
+
+interesses
+- Academia
+- Esportes
+- Futebol
+- Volei
+- Lazer
+- Viagens
+- Entretenimento
+- Area de estudo
+- Musica
+- Filmes
+- Serie
+- Jogos 
+
+modo escuro
+
+tarefas
+cronometro 
+configurações de usuário | perfil
+sugestoes
+
+relatório
+quantidade de tarefas concluídas
+media de tempo com cada tipo de tarefa
+poder definir tags para cada atividade
+
+sugestões
