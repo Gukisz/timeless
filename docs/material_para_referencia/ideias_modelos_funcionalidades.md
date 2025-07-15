@@ -11,10 +11,10 @@
 * Sexo
 * Orientação sexual
 * Telefone
-* Estado civil
 
 **Opcionais:**
 
+* Estado civil
 * Foto de perfil
 * Cidade, Estado, País
 
@@ -33,7 +33,7 @@
 * Tarefas concluídas
 * Dias ativos
 * Sequência de dias produtivos
-* Tempo total de foco
+* Tempo total
 
 ---
 
@@ -41,19 +41,6 @@
 
 ### **Campos principais**
 
-* ID
-* Título
-* Descrição
-* Tipo (Ex: VIDEO, DESENVOLVIMENTO, LEITURA, QUESTOES)
-* Grupo (FK para tabela `grupos`)
-* Assunto (FK para tabela `assuntos`)
-* Tags (ligação N\:N com tabela `tags`)
-* Data de criação
-* Data de conclusão
-* Data de vencimento
-* Horário marcado (único ou separado em início/fim)
-* Tempo estimado e tempo real gasto
-* Pausas registradas
 
 ### **Funcionalidades complementares**
 

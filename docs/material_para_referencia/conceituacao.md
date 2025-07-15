@@ -62,59 +62,6 @@ Pessoas **mentalmente sobrecarregadas pela rotina moderna**, com dificuldades em
 
 ---
 
-## Funcionalidades
-
-### To-Do List Inteligente
-
-* Tarefas com:
-
-  * Título, descrição, duração
-  * Prioridade (urgente, média, leve)
-  * Tags personalizadas (com CRUD)
-  * Datas e horários previstos e reais
-* Métodos: `CRUD`, `buscarPorTags()`, `remarcar()`, `ajustarPrioridade()`
-
-### Calendário Integrado
-
-* Identifica horários livres
-* Ajusta tarefas automaticamente
-* Importação de calendários externos (Google, Outlook)
-* Reconhecimento de indisponibilidade
-
-### IA Adaptativa
-
-* Aprende com o comportamento do usuário
-* Sugere com base em hobbies e preferências
-* Reage a adiamentos com sugestões alternativas
-
-### Relatórios e Feedback
-
-* Tarefas por dia/semana/mês
-* Gráficos de desempenho
-* Comparação com histórico pessoal
-
-### Recompensas e Gamificação
-
-* Insígnias e desbloqueios (temas, sons, mascotes)
-
-### Notificações Inteligentes
-
-* Lembretes positivos e ajustáveis
-* Reagendamento via notificação
-* Mensagens motivacionais
-
-### Configurações Personalizadas
-
-* Temas visuais, sons, mascotes, metas
-* Tipo de notificações
-* Modo claro/escuro
-
-### Segurança e Sincronização
-
-* Login seguro
-* Dados na nuvem
-
----
 
 ## Estratégias para Engajar Usuários
 
