@@ -27,13 +27,6 @@
   * Área de estudo ou profissão
   * Preferências de idioma, aparência, som e notificações
 
-### **Estatísticas por usuário**
-
-* Sessões concluídas
-* Tarefas concluídas
-* Dias ativos
-* Sequência de dias produtivos
-* Tempo total
 
 ---
 
