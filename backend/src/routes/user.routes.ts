@@ -1,6 +1,6 @@
 import { Router } from "express";
+import { createRestRoutes } from "../utils/createRestRoutes";
 
-const userRoutes = Router();
 const userController = {
     list: async () => {},
     create: async () => {},
@@ -9,11 +9,6 @@ const userController = {
     delete: async () => {}
 }
 
-userRoutes.get('/user', userController.list)
-userRoutes.post('/user', userController.create)
-userRoutes.get('/user/:id', userController.show)
-userRoutes.patch('/user/:id', userController.update)
-userRoutes.delete('/user/:id', userController.delete)
-
+const userRoutes = createRestRoutes('user', userController);
 
 export default userRoutes;

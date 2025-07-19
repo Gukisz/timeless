@@ -1,6 +1,5 @@
-import { Router } from "express";
+import { createRestRoutes } from "../utils/createRestRoutes";
 
-const groupRoutes = Router();
 const groupController = {
     list: async () => {},
     create: async () => {},
@@ -9,11 +8,7 @@ const groupController = {
     delete: async () => {}
 }
 
-groupRoutes.get('/group', groupController.list)
-groupRoutes.post('/group', groupController.create)
-groupRoutes.get('/group/:id', groupController.show)
-groupRoutes.patch('/group/:id', groupController.update)
-groupRoutes.delete('/group/:id', groupController.delete)
+const groupRoutes = createRestRoutes('group', groupController);
 
 
 export default groupRoutes;

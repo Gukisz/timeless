@@ -1,6 +1,5 @@
-import { Router } from "express";
+import { createRestRoutes } from "../utils/createRestRoutes";
 
-const taskRoutes = Router();
 const taskController = {
     list: async () => {},
     create: async () => {},
@@ -8,12 +7,6 @@ const taskController = {
     update: async () => {},
     delete: async () => {}
 }
-
-taskRoutes.get('/task', taskController.list)
-taskRoutes.post('/task', taskController.create)
-taskRoutes.get('/task/:id', taskController.show)
-taskRoutes.patch('/task/:id', taskController.update)
-taskRoutes.delete('/task/:id', taskController.delete)
-
+const taskRoutes = createRestRoutes('task', taskController);
 
 export default taskRoutes;

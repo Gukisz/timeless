@@ -1,6 +1,5 @@
-import { Router } from "express";
+import { createRestRoutes } from "../utils/createRestRoutes";
 
-const categoryRoutes = Router();
 const categoryController = {
     list: async () => {},
     create: async () => {},
@@ -9,11 +8,7 @@ const categoryController = {
     delete: async () => {}
 }
 
-categoryRoutes.get('/category', categoryController.list)
-categoryRoutes.post('/category', categoryController.create)
-categoryRoutes.get('/category/:id', categoryController.show)
-categoryRoutes.patch('/category/:id', categoryController.update)
-categoryRoutes.delete('/category/:id', categoryController.delete)
+const categoryRoutes = createRestRoutes('category', categoryController);
 
 
 export default categoryRoutes;
