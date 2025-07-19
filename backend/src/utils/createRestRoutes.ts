@@ -17,5 +17,5 @@ export function createRestRoutes(basePath: string, controller: RestController): 
     router.patch(`/${basePath}/:id`, controller.update);
     router.delete(`/${basePath}/:id`, controller.delete);
 
-return router;
+    return router;
 }
